@@ -1,0 +1,18 @@
+# dependencies
+client/node_modules/
+server/node_modules/
+client/.pnp
+client/.pnp.js
+
+# testing
+client/coverage
+client/
+# production
+client//build
+
+# misc
+client/.DS_Store
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
