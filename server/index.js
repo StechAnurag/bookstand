@@ -2,8 +2,13 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
+
+// Enable Cross Origin Resource Sharing
+app.use(cors());
+
 
 // connecting to mongoDB
 mongoose.connect(`mongodb+srv://rest-shopkeeper:${process.env.MONGO_ATLAS_PASWD}@rest-shop-lwh6s.mongodb.net/bookstand?retryWrites=true&w=majority`, {useNewUrlParser : true})
